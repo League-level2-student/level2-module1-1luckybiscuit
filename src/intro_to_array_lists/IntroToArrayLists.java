@@ -30,14 +30,15 @@ public class IntroToArrayLists {
 			System.out.println(list.get(i));
 		}
 		//7. Print only the Strings that have the letter 'e' in them.
-		for(String i:list) {
-			char e = e;
-			ArrayList<String> word = new ArrayList<String>();
-			for(int o = 0;o<word.size();o++) {
-				word.add(i.charAt(o));
+		for(int i = 0;i<list.size();i++) {
+			char e = 'e';
+			String word = list.get(i);
+			for(int o = 0;o<word.length();o++) {
+				if(word.charAt(o) == e) {
+					System.out.println("\n" + word);
+					break;
+				}
 			}
-			if(o)
-			System.out.println(i);
 		}
 	}
 }
